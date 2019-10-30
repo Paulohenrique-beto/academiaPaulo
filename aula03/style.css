@@ -1,0 +1,18 @@
+.Quadrado{
+    background-color: red;
+    padding: 60px;
+    margin: 60px;
+    font-size: 60px;
+    color: black;
+}
+
+.Circulo{
+    background-color: black;
+    color: white;
+    padding: 60px;
+    margin: 60px;
+    font-size: 60px;
+    border-radius: 100%;
+    
+
+}
