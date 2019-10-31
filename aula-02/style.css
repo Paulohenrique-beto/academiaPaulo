@@ -1,35 +1,44 @@
 nav {
     background-color: white;
     height: 60px;
-}
-
-header {
-    background-color: cadetblue;
     width: 100%;
-
 }
-h1 {
-    color: black;
-    text-transform: uppercase;
-
-    
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;  
+    justify-content: space-around;
 }
-
 ul {
     list-style: none;
     text-transform: uppercase;
     display: flex;
     float: right;
     clear: both;
-
-    
 }
-
 li {
     padding: 8px 16px ;
     display: block;
 }
 li:hover{
-    background-color: cadetblue;
+    background-color: black;
     color: white;
+}
+input {
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+}
+.imagem {
+    display: flex;
+    justify-content: flex-end;
+}
+.imagem img{ 
+    border-radius: 100%;
+    justify-content: flex-end;
+}
+header .tituloh1{
+    margin-top: 160px;
+    font-size: 40px;
 }

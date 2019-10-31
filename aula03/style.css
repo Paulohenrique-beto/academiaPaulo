@@ -1,18 +1,31 @@
 .Quadrado{
     background-color: red;
-    padding: 60px;
-    margin: 60px;
-    font-size: 60px;
+    padding: 30px;
+    margin: 30px;
+    font-size: 30px;
     color: black;
 }
 
 .Circulo{
     background-color: black;
     color: white;
-    padding: 60px;
-    margin: 60px;
-    font-size: 60px;
+    padding: 30px;
+    margin: 30px;
+    font-size: 30px;
     border-radius: 100%;
-    
+}
+section{
+    display: flex;
+    background-color: orange;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
+
+.imagem img {
+    border-radius: 100%;
+    padding: 30px;
+    margin: 30px;
+    width: 60%;
+    
 }
