@@ -1,0 +1,120 @@
+body{
+    display: grid;
+    grid-template-areas: 'navbar'
+                          'banner'
+                          'main'
+                          'section'
+                          'contact'
+                          'footer';
+    grid-template-columns: 100%;
+    margin: 0;
+
+}
+
+nav{
+    grid-area: 'navbar';
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Staatliches', cursive;
+}
+
+
+
+
+nav img{
+    width: 35px;
+    margin: 15px;
+}
+
+nav div:nth-child(2){
+    display: none;
+}
+
+nav div:nth-child(3){
+    align-items: center;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    justify-content:space-around;
+}
+
+header{
+    background-image: url("Imagens/imagemaquaman.jpg");
+    height: 400px;
+    background-size: auto;
+}
+
+@media (max-width :800px){
+    nav div:nth-child(2){
+        display: flex;
+    }nav div:nth-child(3){
+        align-items: center;
+        display: none;
+        width: 400px;
+        height: 200px;
+        justify-content:space-around;}
+    header{
+            background-image: url("Imagens/imagemaquaman.jpg");
+            height: 400px;
+            background-size: cover;
+
+        }
+}
+
+.icon-burguer{
+    width: 40px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#cabecalho{
+    background-color: black;
+    
+}
+
+#cabecalho h1, #cabecalho h2{
+    text-align: center;
+    color: white;
+}
+.titulo{
+    text-transform: uppercase;
+    font-family: 'Staatliches', cursive;
+    font-size: 60px;
+}
+
+.subtitulo{
+    text-transform: uppercase;
+    font-family: 'Staatliches', cursive;
+}
+
+#contato{
+    background-color: black;
+}
+
+#contato h3{
+    text-align: center;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 60px;
+}
+
+#contato div{
+    text-align: center;
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
