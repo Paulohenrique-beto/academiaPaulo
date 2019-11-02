@@ -1,0 +1,11 @@
+header{
+    background-image: url(imagens/banner.png);
+    height: 400px;
+    background-size: auto;
+}
+nav{
+    background-color:#3bc06c;
+    display: flex;
+    height: 10px;
+    justify-content: space-between;
+}
