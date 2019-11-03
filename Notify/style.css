@@ -1,11 +1,46 @@
 header{
-    background-image: url(imagens/banner.png);
+   background-image: url(imagens/banner.png);
     height: 400px;
     background-size: auto;
+    display: flex;
+    align-items: center;
+
+
 }
 nav{
     background-color:#3bc06c;
     display: flex;
     height: 10px;
     justify-content: space-between;
+}
+body{
+    margin: 0px;
+}
+
+
+.titulo{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+.subtitulo{
+    color : white;
+    font-size: 10px;
+}
+
+.png{
+    display: flex;
+}
+
+
+#cabecalho{
+    background-color: white;
+
+}
+
+section #cabecalho2{
+    background-color: grey;
 }
