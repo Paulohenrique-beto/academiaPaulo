@@ -1,3 +1,14 @@
+body{
+    margin: 0px;
+}
+
+
+nav{
+    background-color:#3bc06c;
+    display: flex;
+    height: 10px;
+}
+
 header{
    background-image: url(imagens/banner.png);
     height: 400px;
@@ -7,14 +18,14 @@ header{
 
 
 }
-nav{
-    background-color:#3bc06c;
+
+.png img{
     display: flex;
-    height: 10px;
-    justify-content: space-between;
-}
-body{
-    margin: 0px;
+    width: 307px;
+    padding: 325px;
+
+
+
 }
 
 
@@ -29,10 +40,6 @@ body{
 .subtitulo{
     color : white;
     font-size: 10px;
-}
-
-.png{
-    display: flex;
 }
 
 
