@@ -1,39 +1,21 @@
-# nome = input("Digite seu nome : ")
-# anos = int(input("Quantos anos você tem ? "))
-# robie = str(input("Qual o seu Robie : "))
-
-# if anos == 22:
-#     print("Sua idade esta correta")
-
-# elif anos  > 22:
-#     print("Sua idade nâo é esta")
 
 
-# else :
-#     print("Sua idade não esta correta")
+def somar():
+    num1 = float(input("digite o numero"))
+    num = float(input("digite o numero"))
+    return num1 + num
 
 
 
-numero = 0 
-
-while numero < 5:
-    print(numero)
-
-    numero = numero + 1 
+print(somar())
 
 
-lista = ["cubo magico", "Biblia", "pastor", "surf","manga_com_leite"]
 
-# for item in lista:
-#     print(item)
+def subtrair(num1,num):
+    return num - num1
 
-# for i in range(0, len(lista)):
-#     print(lista[i])
+print(subtrair(10,5))
 
+import math as mt 
 
-# for i in range(0, len(lista),2):
-#      print(lista[i])
-
-
-for i in range(len(lista)):
-     print(lista[i])
+print(mt.ceil(5.4))
