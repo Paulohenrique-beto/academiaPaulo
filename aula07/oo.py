@@ -1,25 +1,49 @@
 class Mamiferos():
-    olhos = 2
-    pelo = 4
-    
-    def __init_(self , especie , patas , rabo , cor):
-        self.especie = especie 
-        self.patas = patas
-        self.rabo = rabo
-        self.cor = cor 
+  olhos = 2
+  patas = 4
 
-    def comer ():
-        print("Comi")
-    def fazer_som():
-        print("Som")
+# metodo construtor / self-> propria  instancia do objeto->se refere a ele mesmo == this do java
+  def __init__(self,pelo,especie,rabo,cor):
 
+    self.pelo = pelo
+    self.especie = especie
+    self.rabo = rabo
+    self.cor = cor
 
-mamifero = Mamiferos("cachorro","4",True , "caramelo")
-mamifero2 = Mamiferos("gato","2",True,"preto")
+  def comer(self):
+    print("Comi")
+  def fazer_som(self):
+    print("Aaaaaa")
+  def dormir(self):
+    print("Dormi")
 
+  
 
+  #criar instancia  / instanciar um objeto
+mamifero = Mamiferos("curto","doguinhos caninos" ,True , "caramelo")
 
-mamifero.fazer_som
+mamifero2 = Mamiferos("longo","agrarios monata" ,False , "purple")
+
+mamifero.comer()
+mamifero2.fazer_som()
 print(mamifero.especie)
 print(mamifero2.especie)
-    
+
+# exemplo de herança
+#parametro = classe pai
+class Gato(Mamiferos):
+      # todos os atributos da classe pai + os atributos da propria classe
+      def __init__(self,pelo,especie,rabo,cor,bigodes):
+            #inicializa | herda os atributos da classe pai = super, e inicializa __init__
+            super().__init__(pelo,especie,rabo,cor)
+            self.bigodes = bigodes
+      
+      def fazer_som(self):
+            print("Miauuuuuuuuuuuuuuu")
+
+gatinho = Gato("super curto","peladus egiptum",True,"bege organico",5)
+print(gatinho.especie)
+print(gatinho.bigodes)
+gatinho.fazer_som()
+gatinho.comer()
+            
