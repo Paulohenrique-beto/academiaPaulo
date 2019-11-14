@@ -53,6 +53,47 @@
 # divisao = num1/num2
 # print("Sua subtraçao foi {} a multiplicaçao {} e a divisao {}".format(subtração,multiplicação,divisao))
 
+
+# Calculadora
+
+#n1 = float(input("Insira o 1 numero:"))
+#n2 = float(input("Insira o 2 numero: "))
+
+#class Calculadora:
+    
+
+
+#    def soma(self,n1,n2):
+        
+#        result = n1 + n2
+#        return result
+
+#    def subtracao(self,n1,n2):
+#        result = n1 - n2
+#        return result
+    
+#    def divisao(self,n1,n2):
+#        result = n1 / n2
+#        return result
+
+#    def multiplicacao(self,n1,n2):
+#        result = n1 * n2
+#        return result
+
+#escolha = str(input("Selecione uma das opcoes abaixo: " + "\n" +"1 - adição\n" +"2- Subtração\n" + "3- Divisao\n" + "4- Multiplicação\n"))
+
+#calculadora = Calculadora()
+#if(escolha == 1):
+#    print("O resultado e: " ,calculadora.soma(n1,n2))
+#elif(escolha == 2):
+#    print("O resultado e: " ,calculadora.subtracao(n1,n2))
+#elif(escolha == 3):
+#    print("O resultado e: " ,calculadora.divisao(n1,n2))
+#elif(escolha == 4):
+#    print("O resultado e: " ,calculadora.mutiplicacao(n1,n2))
+
+
+
 # 5) Escreva um programa que leia o nome de um funcionário, seu número de horas trabalhadas,
 #  o valor que recebe por hora e calcula o salário desse funcionário. A seguir, mostre o nome e o salário do funcionário.
 
@@ -81,49 +122,51 @@
 
 # Testar todos os métodos criados printando em tela os resultados solicitados acima
 
-# nomed = input("Informações Dono"+"\n"+"Informe seu nome: ")
-# idaded = input("Informe sua idade: ")
-# print("\n")
-# nomep = input("Informações PET"+"\n"+"Informe o nome: ")
-# idadep = input("Informe a idade: ")
-# print("\n")
-# class Pessoa():
+ nomed = input("Informações Dono"+"\n"+"Informe seu nome: ")
+ idaded = input("Informe sua idade: ")
+ print("\n")
+ nomep = input("Informações PET"+"\n"+"Informe o nome: ")
+ idadep = input("Informe a idade: ")
+ print("\n")
+ class Pessoa():
 
-#     def __init__(self,nome,idade):
-#         self.nome = nomed
-#         self.idade = idaded
+     def __init__(self,nome,idade):
+         self.nome = nomed
+         self.idade = idaded
 
-#     # def pessoa(self):
-#     #     return
+      def pessoa(self):
+          return
        
         
-# class Pet():
+ class Pet():
 
-#     def __init__(self,nome,idade,dono):
-#         self.nome = nomep
-#         self.idade = idadep
-#         self.dono = dono
+     def __init__(self,nome,idade,dono):
+         self.nome = nomep
+         self.idade = idadep
+         self.dono = dono
         
-#     # def idade_pet(self):
-#     #     aux = int(input("Insira o ano de nascimento do seu Pet:"))
-#     #     idade = 2019 - aux
-#     #     return idade
+      def idade_pet(self):
+          aux = int(input("Insira o ano de nascimento do seu Pet:"))
+          idade = 2019 - aux
+          return idade
        
         
         
-# pessoas = Pessoa(nomed,idaded)
-# pets = Pet(nomep,idadep,pessoas.nome)
+ pessoas = Pessoa(nomed,idaded)
+ pets = Pet(nomep,idadep,pessoas.nome)
 
-# print("Dono:","\n","Nome: " , pessoas.nome ,"\n","Idade: " , pessoas.idade )
-# print("\n")
-# print("PET","\n","Nome:" , pets.nome,"\n", "Idade: ", pets.idade,"\n","Dono: ",pets.dono) 
+ print("Dono:","\n","Nome: " , pessoas.nome ,"\n","Idade: " , pessoas.idade )
+ print("\n")
+ print("PET","\n","Nome:" , pets.nome,"\n", "Idade: ", pets.idade,"\n","Dono: ",pets.dono) 
 
 
-## Um pouco sobre Redes
+## UM POUCO DE REDES 
+
     ## Computadores compartilhando recursos
     ## Metodo de requisição HTTP anda junto com os status, metodo post pega dados, atualização dos dados pode ser o put, metodo delete http
     ## URL pode trazer diferentes resultados, diferentes resultados com diferentes metodos
     ## IP endereço de identificador unico de cada maquina (endereço da maquina, pra onde devovler)
     ## DNS nome do servidor, onde faz a requisição e ele pega o site e devolve pro IP
     ## CRUD cada letra tem uma função especifica, C --> Create --> Criar coisas no banco, R --> Read --> Consultar o banco, U --> Update --> associado ao input do HTTP e D --> Delete --> deleta
-    ## API é um conector que faz a ligação entre sistemas diferentes, end points para fazer consultar inserções e outras coisas, ele determina os dados pelos metodos HTTP, a função conecta coisas diferentes e faz os sistemas serem interligados.
+    ## API é um conector que faz a ligação entre sistemas diferentes, end points para fazer consultar inserções e outras coisas, ele determina os dados pelos metodos HTTP, 
+    ##a função conecta coisas diferentes e faz os sistemas serem interligados.
